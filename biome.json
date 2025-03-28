@@ -45,13 +45,16 @@
         "noSvgWithoutTitle": "off"
       },
       "style": {
-        "noNonNullAssertion": "off"
+        "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "error"
       },
       "complexity": {
         "noForEach": "off"
       },
       "correctness": {
-        "noUnusedImports": "error"
+        "noUnusedImports": "error",
+        "noUnusedFunctionParameters": "error",
+        "noUnusedPrivateClassMembers": "error"
       }
     },
     "ignore": ["**/postcss.config.cjs", "**/cspell.config.cjs", ".amplify"]
