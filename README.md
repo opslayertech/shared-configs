@@ -25,3 +25,11 @@ pnpm add -D opslayertech/shared-configs
   "extends": ["@opslayertech/shared-configs/biome"]
 }
 ```
+
+BiomeV2
+
+```json
+{
+  "extends": ["@opslayertech/shared-configs/biomeV2"]
+}
+```

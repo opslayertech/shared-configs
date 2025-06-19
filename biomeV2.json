@@ -1,0 +1,134 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "css": {
+    "formatter": {
+      "enabled": false
+    },
+    "linter": {
+      "enabled": false
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto"
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "files": {
+    "includes": [
+      "**",
+      "!**/*.d.ts",
+      "!**/.amplify",
+      "!**/.next",
+      "!**/.vscode",
+      "!**/node_modules",
+      "!**/playwright-report",
+      "!**/test-results",
+      "!**/tests/assets",
+      "!**/tests/data/polkadot",
+      "!**/tests/metamask",
+      "!**/tests/data/rabby",
+      "!**/zombienet/specs",
+      "!**/cdk.out",
+      "!**/dist",
+      "!**/build",
+      "!pnpm-lock.yaml",
+      "!stylelintcache",
+      "!tsconfig.tsbuildinfo"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useSemanticElements": "off",
+        "noSvgWithoutTitle": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "error",
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error"
+      },
+      "complexity": {
+        "noForEach": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedFunctionParameters": "error",
+        "noUnusedPrivateClassMembers": "error"
+      }
+    },
+    "includes": [
+      "**",
+      "!**/postcss.config.cjs",
+      "!**/cspell.config.cjs",
+      "!**/.amplify"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    },
+    "globals": ["React", "JSX"]
+  },
+  "overrides": [
+    {
+      "includes": [
+        "**/src/pages/**/*.ts*",
+        "**/*.config.ts*",
+        "**/*.config.*js",
+        "**/global.setup.ts",
+        "**/_app.tsx",
+        "**/_document.tsx",
+        "**/loading.tsx",
+        "**/not-found.tsx",
+        "**/error.tsx",
+        "**/global-error.tsx",
+        "**/route.tsx",
+        "**/template.tsx",
+        "**/default.tsx",
+        "**/middleware.ts"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/tests/**/*.ts"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noEmptyPattern": "off"
+          },
+          "suspicious": {
+            "noEmptyBlockStatements": "off"
+          }
+        }
+      }
+    }
+  ]
+}

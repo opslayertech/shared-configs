@@ -2,6 +2,7 @@
   "name": "@opslayertech/shared-configs",
   "type": "module",
   "exports": {
-    "./biome": "./biome.json"
+    "./biome": "./biome.json",
+    "./biomeV2": "./biomeV2.json"
   }
 }
