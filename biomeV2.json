@@ -71,7 +71,8 @@
         "noUnusedPrivateClassMembers": "error"
       },
       "nursery": {
-        "noImportCycles": "error"
+        "noImportCycles": "error",
+        "noFloatingPromises": "error"
       }
     },
     "includes": [
