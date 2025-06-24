@@ -6,14 +6,14 @@
   "type": "module",
   "private": false,
   "publishConfig": {
-    "access": "public"
+      "access": "public"
   },
   "files": [
-    "biome.json",
-    "biomeV2.json"
+      "biome.json",
+      "biomeV2.json"
   ],
   "exports": {
-    "./biome": "./biome.json",
-    "./biomeV2": "./biomeV2.json"
-   }
+      "./biome": "./biome.json",
+      "./biomeV2": "./biomeV2.json"
+  }
 }
