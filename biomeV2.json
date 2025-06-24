@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/stable/schema.json",
+"$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
   "css": {
     "formatter": {
       "enabled": false
@@ -17,12 +17,29 @@
     "lineWidth": 80,
     "attributePosition": "auto"
   },
-  "assist": {
-    "actions": {
-      "source": {
-        "organizeImports": "on"
-      }
-    }
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "files": {
+    "includes": [
+      "**",
+      "!**/*.d.ts",
+      "!**/.amplify",
+      "!**/.next",
+      "!**/.vscode",
+      "!**/node_modules",
+      "!**/playwright-report",
+      "!**/test-results",
+      "!**/tests/assets",
+      "!**/tests/data/polkadot",
+      "!**/tests/metamask",
+      "!**/tests/data/rabby",
+      "!**/zombienet/specs",
+      "!**/cdk.out",
+      "!**/dist",
+      "!**/build",
+      "!pnpm-lock.yaml",
+      "!stylelintcache",
+      "!tsconfig.tsbuildinfo"
+    ]
   },
   "linter": {
     "enabled": true,
@@ -57,7 +74,13 @@
         "noImportCycles": "error",
         "noFloatingPromises": "error"
       }
-    }
+    },
+    "includes": [
+      "**",
+      "!**/postcss.config.cjs",
+      "!**/cspell.config.cjs",
+      "!**/.amplify"
+    ]
   },
   "javascript": {
     "formatter": {
