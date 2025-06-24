@@ -1,8 +1,19 @@
 {
   "name": "@opslayertech/shared-configs",
+  "author": "Opslayer https://opslayer.com/",
+  "version": "0.0.1",
+  "description": "Opslayer shared configs",
   "type": "module",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "biome.json",
+    "biomeV2.json"
+  ],
   "exports": {
     "./biome": "./biome.json",
     "./biomeV2": "./biomeV2.json"
-  }
+   }
 }
