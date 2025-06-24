@@ -1,7 +1,7 @@
 {
   "name": "@opslayertech/shared-configs",
   "author": "Opslayer https://opslayer.com/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opslayer shared configs",
   "type": "module",
   "private": false,
